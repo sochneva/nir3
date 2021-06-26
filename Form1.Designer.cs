@@ -61,7 +61,7 @@
             this.GTextBox = new System.Windows.Forms.TextBox();
             this.ToutTextBox = new System.Windows.Forms.TextBox();
             this.BTextBox = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.NptTextBox = new System.Windows.Forms.TextBox();
             this.DvdTextBox = new System.Windows.Forms.TextBox();
             this.TpevdTextBox = new System.Windows.Forms.TextBox();
             this.PbvdTextBox = new System.Windows.Forms.TextBox();
@@ -69,13 +69,13 @@
             this.TpendTextBox = new System.Windows.Forms.TextBox();
             this.PbndTextBox = new System.Windows.Forms.TextBox();
             this.BoosterCompressorTextBox = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.PkTextBox = new System.Windows.Forms.TextBox();
+            this.DtkTextBox = new System.Windows.Forms.TextBox();
+            this.NvdTextBox = new System.Windows.Forms.TextBox();
+            this.NpgubTextBox = new System.Windows.Forms.TextBox();
+            this.NpgunTextBox = new System.Windows.Forms.TextBox();
+            this.NupgubTextBox = new System.Windows.Forms.TextBox();
+            this.NupgunTextBox = new System.Windows.Forms.TextBox();
             this.tTrackBar = new System.Windows.Forms.TrackBar();
             this.TnvTrackBar = new System.Windows.Forms.TrackBar();
             this.PnvTrackBar = new System.Windows.Forms.TrackBar();
@@ -93,6 +93,10 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.DvdTrackBar = new System.Windows.Forms.TrackBar();
+            this.QndTrackBar = new System.Windows.Forms.TrackBar();
+            this.label30 = new System.Windows.Forms.Label();
+            this.QvdTrackBar = new System.Windows.Forms.TrackBar();
+            this.label31 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TnvTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PnvTrackBar)).BeginInit();
@@ -102,6 +106,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.TlvTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DvdTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QndTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QvdTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -391,12 +397,12 @@
             this.BTextBox.Size = new System.Drawing.Size(100, 20);
             this.BTextBox.TabIndex = 33;
             // 
-            // textBox6
+            // NptTextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(287, 191);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 34;
+            this.NptTextBox.Location = new System.Drawing.Point(287, 191);
+            this.NptTextBox.Name = "NptTextBox";
+            this.NptTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NptTextBox.TabIndex = 34;
             // 
             // DvdTextBox
             // 
@@ -447,54 +453,54 @@
             this.BoosterCompressorTextBox.Size = new System.Drawing.Size(100, 20);
             this.BoosterCompressorTextBox.TabIndex = 42;
             // 
-            // textBox15
+            // PkTextBox
             // 
-            this.textBox15.Location = new System.Drawing.Point(964, 27);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 43;
+            this.PkTextBox.Location = new System.Drawing.Point(964, 27);
+            this.PkTextBox.Name = "PkTextBox";
+            this.PkTextBox.Size = new System.Drawing.Size(100, 20);
+            this.PkTextBox.TabIndex = 43;
             // 
-            // textBox16
+            // DtkTextBox
             // 
-            this.textBox16.Location = new System.Drawing.Point(964, 49);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 44;
+            this.DtkTextBox.Location = new System.Drawing.Point(964, 49);
+            this.DtkTextBox.Name = "DtkTextBox";
+            this.DtkTextBox.Size = new System.Drawing.Size(100, 20);
+            this.DtkTextBox.TabIndex = 44;
             // 
-            // textBox17
+            // NvdTextBox
             // 
-            this.textBox17.Location = new System.Drawing.Point(966, 192);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 45;
+            this.NvdTextBox.Location = new System.Drawing.Point(966, 192);
+            this.NvdTextBox.Name = "NvdTextBox";
+            this.NvdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NvdTextBox.TabIndex = 45;
             // 
-            // textBox18
+            // NpgubTextBox
             // 
-            this.textBox18.Location = new System.Drawing.Point(966, 252);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 46;
+            this.NpgubTextBox.Location = new System.Drawing.Point(966, 252);
+            this.NpgubTextBox.Name = "NpgubTextBox";
+            this.NpgubTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NpgubTextBox.TabIndex = 46;
             // 
-            // textBox19
+            // NpgunTextBox
             // 
-            this.textBox19.Location = new System.Drawing.Point(966, 274);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 47;
+            this.NpgunTextBox.Location = new System.Drawing.Point(966, 274);
+            this.NpgunTextBox.Name = "NpgunTextBox";
+            this.NpgunTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NpgunTextBox.TabIndex = 47;
             // 
-            // textBox20
+            // NupgubTextBox
             // 
-            this.textBox20.Location = new System.Drawing.Point(966, 296);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 48;
+            this.NupgubTextBox.Location = new System.Drawing.Point(966, 296);
+            this.NupgubTextBox.Name = "NupgubTextBox";
+            this.NupgubTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NupgubTextBox.TabIndex = 48;
             // 
-            // textBox21
+            // NupgunTextBox
             // 
-            this.textBox21.Location = new System.Drawing.Point(966, 318);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
-            this.textBox21.TabIndex = 49;
+            this.NupgunTextBox.Location = new System.Drawing.Point(966, 318);
+            this.NupgunTextBox.Name = "NupgunTextBox";
+            this.NupgunTextBox.Size = new System.Drawing.Size(100, 20);
+            this.NupgunTextBox.TabIndex = 49;
             // 
             // tTrackBar
             // 
@@ -559,6 +565,7 @@
             // TlvTrackBar
             // 
             this.TlvTrackBar.Location = new System.Drawing.Point(320, 430);
+            this.TlvTrackBar.Maximum = 7;
             this.TlvTrackBar.Name = "TlvTrackBar";
             this.TlvTrackBar.Size = new System.Drawing.Size(150, 45);
             this.TlvTrackBar.TabIndex = 56;
@@ -567,6 +574,7 @@
             // WTrackBar
             // 
             this.WTrackBar.Location = new System.Drawing.Point(320, 462);
+            this.WTrackBar.Maximum = 2;
             this.WTrackBar.Name = "WTrackBar";
             this.WTrackBar.Size = new System.Drawing.Size(150, 45);
             this.WTrackBar.TabIndex = 57;
@@ -650,7 +658,6 @@
             this.label7.Size = new System.Drawing.Size(173, 13);
             this.label7.TabIndex = 65;
             this.label7.Text = "Расход пара высокого давления";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // DvdTrackBar
             // 
@@ -662,11 +669,53 @@
             this.DvdTrackBar.TickFrequency = 10;
             this.DvdTrackBar.Scroll += new System.EventHandler(this.trackBarChange);
             // 
+            // QndTrackBar
+            // 
+            this.QndTrackBar.Location = new System.Drawing.Point(320, 530);
+            this.QndTrackBar.Maximum = 100;
+            this.QndTrackBar.Name = "QndTrackBar";
+            this.QndTrackBar.Size = new System.Drawing.Size(150, 45);
+            this.QndTrackBar.TabIndex = 67;
+            this.QndTrackBar.TickFrequency = 10;
+            this.QndTrackBar.Scroll += new System.EventHandler(this.trackBarChange);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(12, 530);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(181, 13);
+            this.label30.TabIndex = 68;
+            this.label30.Text = "Подача в насос низкого давления";
+            // 
+            // QvdTrackBar
+            // 
+            this.QvdTrackBar.Location = new System.Drawing.Point(320, 566);
+            this.QvdTrackBar.Maximum = 100;
+            this.QvdTrackBar.Name = "QvdTrackBar";
+            this.QvdTrackBar.Size = new System.Drawing.Size(150, 45);
+            this.QvdTrackBar.TabIndex = 69;
+            this.QvdTrackBar.TickFrequency = 10;
+            this.QvdTrackBar.Scroll += new System.EventHandler(this.trackBarChange);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(12, 566);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(189, 13);
+            this.label31.TabIndex = 70;
+            this.label31.Text = "Подача в насос высокого давления";
+            // 
             // model
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1087, 573);
+            this.ClientSize = new System.Drawing.Size(1087, 632);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.QvdTrackBar);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.QndTrackBar);
             this.Controls.Add(this.DvdTrackBar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.WTrackBar);
@@ -677,13 +726,13 @@
             this.Controls.Add(this.PnvTrackBar);
             this.Controls.Add(this.TnvTrackBar);
             this.Controls.Add(this.tTrackBar);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.NupgunTextBox);
+            this.Controls.Add(this.NupgubTextBox);
+            this.Controls.Add(this.NpgunTextBox);
+            this.Controls.Add(this.NpgubTextBox);
+            this.Controls.Add(this.NvdTextBox);
+            this.Controls.Add(this.DtkTextBox);
+            this.Controls.Add(this.PkTextBox);
             this.Controls.Add(this.BoosterCompressorTextBox);
             this.Controls.Add(this.PbndTextBox);
             this.Controls.Add(this.TpendTextBox);
@@ -691,7 +740,7 @@
             this.Controls.Add(this.PbvdTextBox);
             this.Controls.Add(this.TpevdTextBox);
             this.Controls.Add(this.DvdTextBox);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.NptTextBox);
             this.Controls.Add(this.BTextBox);
             this.Controls.Add(this.ToutTextBox);
             this.Controls.Add(this.GTextBox);
@@ -743,6 +792,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.TlvTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DvdTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QndTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QvdTrackBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -783,7 +834,7 @@
         private System.Windows.Forms.TextBox GTextBox;
         private System.Windows.Forms.TextBox ToutTextBox;
         private System.Windows.Forms.TextBox BTextBox;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox NptTextBox;
         private System.Windows.Forms.TextBox DvdTextBox;
         private System.Windows.Forms.TextBox TpevdTextBox;
         private System.Windows.Forms.TextBox PbvdTextBox;
@@ -791,13 +842,13 @@
         private System.Windows.Forms.TextBox TpendTextBox;
         private System.Windows.Forms.TextBox PbndTextBox;
         private System.Windows.Forms.TextBox BoosterCompressorTextBox;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox PkTextBox;
+        private System.Windows.Forms.TextBox DtkTextBox;
+        private System.Windows.Forms.TextBox NvdTextBox;
+        private System.Windows.Forms.TextBox NpgubTextBox;
+        private System.Windows.Forms.TextBox NpgunTextBox;
+        private System.Windows.Forms.TextBox NupgubTextBox;
+        private System.Windows.Forms.TextBox NupgunTextBox;
         private System.Windows.Forms.TrackBar tTrackBar;
         private System.Windows.Forms.TrackBar TnvTrackBar;
         private System.Windows.Forms.TrackBar PnvTrackBar;
@@ -815,6 +866,10 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TrackBar DvdTrackBar;
+        private System.Windows.Forms.TrackBar QndTrackBar;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TrackBar QvdTrackBar;
+        private System.Windows.Forms.Label label31;
     }
 }
 

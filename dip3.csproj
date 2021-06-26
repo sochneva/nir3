@@ -116,6 +116,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stages\BoosterCompressor.cs" />
+    <Compile Include="Stages\Capacitor.cs" />
+    <Compile Include="Stages\FeedPump.cs" />
+    <Compile Include="Stages\FinalPower.cs" />
     <Compile Include="Stages\GTUModel.cs" />
     <Compile Include="Stages\PTModel.cs" />
     <Compile Include="Stage.cs" />
@@ -202,10 +205,10 @@
     <Content Include="DataFiles\ДК\Ndk%28N%29.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DataFiles\Конденсатор\dTk\dTk%28Dk,Tlv,W%29.txt">
+    <Content Include="DataFiles\Конденсатор\dTk%28Dk,Tlv,W%29.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="DataFiles\Конденсатор\Pk\Pk%28Dk,Tlv,W%29.txt">
+    <Content Include="DataFiles\Конденсатор\Pk%28Dk,Tlv,W%29.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DataFiles\КУ\Dnd%28Dvd%29.txt">
@@ -227,6 +230,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DataFiles\КУ\Tvd%28Ngtu,tnv%29.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Насос\H.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Насос\N.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataFiles\Насос\Nupn%28Q%29.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DataFiles\ПТ\N%28Dnd%29.txt">
