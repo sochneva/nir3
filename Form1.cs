@@ -29,6 +29,7 @@ namespace dip3
         private void trackBarChange(object sender, EventArgs e)
         {
             TrackBar trackBar = (TrackBar)sender;
+
             gtuModel.updateParam(trackBar.Name, trackBar.Value);
             recoveryBoiler.updateParam(trackBar.Name, trackBar.Value, TnvTrackBar.Value, NgtuTrackBar.Value, gtuModel.G, gtuModel.T);
             capacitor.updateParam(trackBar.Name, trackBar.Value, recoveryBoiler.Dvd, recoveryBoiler.Dnd);
@@ -38,38 +39,38 @@ namespace dip3
             finalPower.updateParam(gtuModel.N, ptModel.GrossPower, feedPump.N, boosterCompressor.BoosterCompressorValue, gtuModel.B, GTUModel.DefQ);
 
             //1 этап
-            NTextBox.Text = gtuModel.N.ToString();
-            NuTextBox.Text = gtuModel.Nu.ToString();
-            GTextBox.Text = gtuModel.G.ToString();
-            ToutTextBox.Text = gtuModel.T.ToString();
-            BTextBox.Text = gtuModel.B.ToString();
+            NTextBox.Text = String.Format("{0:f3}", gtuModel.N);
+            NuTextBox.Text = String.Format("{0:f3}", gtuModel.Nu);
+            GTextBox.Text = String.Format("{0:f3}", gtuModel.G);
+            ToutTextBox.Text = String.Format("{0:f3}", gtuModel.T);
+            BTextBox.Text = String.Format("{0:f3}", gtuModel.B);
 
             //2 этап
-            DvdTextBox.Text = recoveryBoiler.Dvd.ToString();
-            TpevdTextBox.Text = recoveryBoiler.Tpevd.ToString();
-            PbvdTextBox.Text = recoveryBoiler.Pbvd.ToString();
-            DndTextBox.Text = recoveryBoiler.Dnd.ToString();
-            TpendTextBox.Text = recoveryBoiler.Tpend.ToString();
-            PbndTextBox.Text = recoveryBoiler.Pbnd.ToString();
+            DvdTextBox.Text = String.Format("{0:f3}", recoveryBoiler.Dvd);
+            TpevdTextBox.Text = String.Format("{0:f3}", recoveryBoiler.Tpevd);
+            PbvdTextBox.Text = String.Format("{0:f3}", recoveryBoiler.Pbvd);
+            DndTextBox.Text = String.Format("{0:f3}", recoveryBoiler.Dnd);
+            TpendTextBox.Text = String.Format("{0:f3}", recoveryBoiler.Tpend);
+            PbndTextBox.Text = String.Format("{0:f3}", recoveryBoiler.Pbnd);
 
             //3 этап
-            PkTextBox.Text = capacitor.Pk.ToString();
-            DtkTextBox.Text = capacitor.Dtk.ToString();
+            PkTextBox.Text = String.Format("{0:f3}", capacitor.Pk);
+            DtkTextBox.Text = String.Format("{0:f3}", capacitor.Dtk);
 
             //4 Этап
-            NptTextBox.Text = ptModel.GrossPower.ToString();
+            NptTextBox.Text = String.Format("{0:f3}", ptModel.GrossPower);
 
             //5 Этап
-            BoosterCompressorTextBox.Text = boosterCompressor.BoosterCompressorValue.ToString();
+            BoosterCompressorTextBox.Text = String.Format("{0:f3}", boosterCompressor.BoosterCompressorValue);
 
             //6 Этап
-            NvdTextBox.Text = feedPump.N.ToString();
+            NvdTextBox.Text = String.Format("{0:f3}", feedPump.N);
 
             // 7 Этап
-            NpgubTextBox.Text = finalPower.Npgub.ToString();
-            NpgunTextBox.Text = finalPower.Npgun.ToString();
-            NupgubTextBox.Text = finalPower.Nupgub.ToString();
-            NupgunTextBox.Text = finalPower.Nupgun.ToString();
+            NpgubTextBox.Text = String.Format("{0:f3}", finalPower.Npgub);
+            NpgunTextBox.Text = String.Format("{0:f3}", finalPower.Npgun);
+            NupgubTextBox.Text = String.Format("{0:f3}", finalPower.Nupgub);
+            NupgunTextBox.Text = String.Format("{0:f3}", finalPower.Nupgun);
         }
 
         private void InitializeStages()
