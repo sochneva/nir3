@@ -38,8 +38,8 @@ namespace dip3
             while (x > arr[0][i] && i < arr[0].Length - 2) i++;
             while (y > arr[1][j] && j < arr[1].Length - 2) j++;
 
-            double fr1 = (arr[0][i + 1] - x) / (arr[0][i + 1] - arr[0][i]) * z[j, i] + (x - arr[0][i]) / (arr[0][i + 1] - arr[0][i]) * z[j, i + 1];
-            double fr2 = (arr[0][i + 1] - x) / (arr[0][i + 1] - arr[0][i]) * z[j + 1, i] + (x - arr[0][i]) / (arr[0][i + 1] - arr[0][i]) * z[j + 1, i + 1];
+            double fr1 = (arr[0][i + 1] - x) / (arr[0][i + 1] - arr[0][i]) * z[i, j] + (x - arr[0][i]) / (arr[0][i + 1] - arr[0][i]) * z[i + 1, j];
+            double fr2 = (arr[0][i + 1] - x) / (arr[0][i + 1] - arr[0][i]) * z[i, j + 1] + (x - arr[0][i]) / (arr[0][i + 1] - arr[0][i]) * z[i + 1, j + 1];
             double fp = (arr[1][j + 1] - y) / (arr[1][j + 1] - arr[1][j]) * fr1 + (y - arr[1][j]) / (arr[1][j + 1] - arr[1][j]) * fr2;
 
             return fp;
